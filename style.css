@@ -6,65 +6,190 @@
 
 /*body*/
     body {
-    margin: 0;
+        margin: 0;
+        background-color: #ffeabc;
     }
 
 /*navbar*/
     .navbar {
-    background-color: #1F202C;
-    text-align: center;
-    padding: 5px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+        position: relative;
+        z-index: 10;
+        background-color: #1F202C;
+        text-align: center;
+        padding: 5px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 6px 50px rgba(0, 0, 0, 0.8);
     }
 
     .navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 6px 30px;
-    font-family: "Figree", sans-serif;
-    font-size: 22px;
-    display: inline-block;
-    transition: color 0.2s;
+        color: white;
+        text-decoration: none;
+        padding: 6px 30px;
+        font-family: "Figtree", sans-serif;
+        font-size: 22px;
+        display: inline-block;
+        transition: color 0.2s;
     }
 
     .navbar a:hover {
-    color: rgb(255, 173, 20);
-    border-radius: 5px;
-    cursor: pointer;
+        color: rgb(255, 173, 20);
+        border-radius: 5px;
+        cursor: pointer;
     }
 
+
+/*FOOTER*/
+    .footerBar {
+        background-color: #1F202C;
+        padding: 30px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .footerText {
+        color: white;
+        font-family: "Figtree", sans-serif;
+        font-size: 14px;
+    }
 
 /*INDEX EXCLUSIVE*/
 
-/*HERO SECTION*/
+    /*HERO SECTION*/
 
-    .hero {
-        height: 100vh;
-        background-image: url("Assets/BurgerBanner.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        color: white;
-    }
+        .hero {
+            height: 100vh;
+            background-image: url("Assets/BurgerBanner.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
 
-    .heroText {
-        font-size: 156px;
-        margin-top: 15%;
-        font: Merriweather Sans, sans-serif;
-    }
+        .heroText {
+            font-size: 156px;
+            margin-top: 15%;
+            font-family: "Merriweather Sans", sans-serif;
+        }
 
-    .hero-btn {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 12px 30px;
-        background: #1F202C;
-        color: rgb(255, 255, 255);
-        font-size: 32px;
-        font-weight: bold;
+        .heroBtn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 30px;
+            background: #1F202C;
+            color: rgb(255, 255, 255);
+            font-size: 32px;
+            font-weight: bold;
+            border-radius: 20px;
+            transition: color 0.4s, transform 0.4s, box-shadow 0.4s;
+        }
+
+        .heroBtn:hover {
+            background: #ffab7a;
+            transform: translateY(-3px);
+            color: rgb(0, 0, 0);
+            box-shadow: 0 6px 50px rgba(0, 0, 0, 0.8);
+        }
+
+
+    /*HOME GRID ITEMS*/
+            
+        .container {
+        color: #ffffff;
+        display: grid;
+        grid-template-areas: "homeMenu homeAbout homeRes";
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        font-family: "Figtree", sans-serif;
+        margin: auto 200px;
         border-radius: 20px;
-    }
+        padding-bottom: 2%;
+        }
+
+        .container img {
+        border-radius: 15px;
+        }
+
+        .container div {
+        background: #1F202C;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 20px;
+        outline: #7a7a7a solid 5px;
+        }
+
+        .container div h1 {
+        background: #d9d9d9;   /* gray */
+        color: #1F202C;
+        margin: -10px -10px 10px -10px; /* stretch to edges */
+        padding: 15px;
+        border-radius: 20px 20px 0 0;  /* only top corners rounded */
+        }
+
+        .container div.homeMenu {
+        grid-area: homeMenu;
+        text-align: center;
+        padding: 10px;
+        }
+
+        .container div.homeAbout {
+        grid-area: homeAbout;
+        text-align: center;
+        padding: 10px;
+        }
+
+        .container div.homeRes {
+        grid-area: homeRes;
+        text-align: center;
+        padding: 10px;
+        }
+
+        .gridButton {
+        color: rgb(255, 255, 255);
+        font-family: "Figtree", sans-serif;
+        font-size: 32px;
+        padding: 5px 30px;
+        background-color: rgb(160, 39, 2);
+        border-radius: 10px;
+        border: none;
+        margin-top: 10px;
+        transition:
+            background-color 0.3s,
+            color 0.3s;
+        }
+
+        .gridButton:hover {
+        color: #000000;
+        background-color: #ffab7a;
+        cursor: pointer;
+        }
+    
+    /*ADVERT BANNER*/
+        .homeBanner {
+            background-color: #ffb978;
+            display: flex;
+            gap: 60px;
+            padding-bottom: none;
+            margin-bottom: 50px;
+        }
+
+        .homeBanner img {
+            padding: 10px;
+        }
+
+        .homeBannerImg {
+            height: 400px;
+            display: block;
+        }
+
+        .homeBannerText {
+            color: #1F202C;
+            align-self: center;
+            font-family: "Merriweather Sans", sans-serif;
+            font-size: 20px;
+        }
