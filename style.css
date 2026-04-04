@@ -10,6 +10,23 @@
         background-color: #ffeabc;
     }
 
+
+/*back to top button*/
+    .backToTop {
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        width: 3%;
+        height: 6%;
+        position: fixed;
+        right: 5%;
+        bottom: 5%;
+        background-color: #11283fad;
+        border-radius: 5px;
+        padding: 4px 4px;
+        z-index: 2;
+    }
+
 /*navbar*/
     .navbar {
         position: relative;
@@ -62,13 +79,14 @@
         .hero {
             height: 100vh;
             background-image: url("Assets/BurgerBanner.png");
-            background-size: cover;
+            background-size: 110%;
             background-position: center;
             background-repeat: no-repeat;
             display: flex;
             justify-content: center;
             text-align: center;
             color: white;
+            transition: background-position 0.5s ease-out;
         }
 
         .heroText {
@@ -115,7 +133,7 @@
         border-radius: 15px;
         }
 
-        .container div {
+        .container > div {
         background: #1F202C;
         padding: 10px;
         border-radius: 20px;
@@ -124,11 +142,11 @@
         }
 
         .container div h1 {
-        background: #d9d9d9;   /* gray */
+        background: #d9d9d9;
         color: #1F202C;
-        margin: -10px -10px 10px -10px; /* stretch to edges */
+        margin: -10px -10px 10px -10px;
         padding: 15px;
-        border-radius: 20px 20px 0 0;  /* only top corners rounded */
+        border-radius: 20px 20px 0 0;
         }
 
         .container div.homeMenu {
@@ -150,22 +168,23 @@
         }
 
         .gridButton {
-        color: rgb(255, 255, 255);
+        color: black;
         font-family: "Figtree", sans-serif;
         font-size: 32px;
         padding: 5px 30px;
-        background-color: rgb(160, 39, 2);
+        background-color: #ffab7a;
         border-radius: 10px;
         border: none;
         margin-top: 10px;
+        display: inline-block;
+        text-decoration: none;
         transition:
             background-color 0.3s,
             color 0.3s;
         }
 
         .gridButton:hover {
-        color: #000000;
-        background-color: #ffab7a;
+        background-color: #ffffff;
         cursor: pointer;
         }
     
@@ -176,10 +195,6 @@
             gap: 60px;
             padding-bottom: none;
             margin-bottom: 50px;
-        }
-
-        .homeBanner img {
-            padding: 10px;
         }
 
         .homeBannerImg {
@@ -193,3 +208,228 @@
             font-family: "Merriweather Sans", sans-serif;
             font-size: 20px;
         }
+
+
+
+/*MENU EXCLUSIVE*/
+
+    .menuTitle {
+        font-family: "Merriweather Sans", sans-serif;
+        text-align: center;
+        color: #1F202C;
+        font-size: 48px;
+        margin-top: 40px;
+    }
+
+    .foodCard {
+        font-family: "figtree", sans-serif;
+        text-align: center;
+        border-radius: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foodCard h1 {
+        margin: -40px -40px 10px -40px;
+    }
+
+    .foodCard img {
+        align-self: center;
+    }
+
+
+/*RESERVATION EXCLUSIVE*/
+
+    .reserveTitle {
+        font-family: "Merriweather Sans", sans-serif;
+        text-align: center;
+        color: #1F202C;
+        font-size: 48px;
+        margin-top: 40px;
+    }
+
+    .reserveContainer {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 3%; 
+        flex-wrap: wrap;
+    }
+
+    .reserveLeft {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reserveRight {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reserveForm {
+        width: 586px;
+        height: 600px;
+        font-family: "figtree", sans-serif;
+        color: white;
+        background-color: #1F202C;
+        border-radius: 20px;
+        padding: 30px;
+        gap: 15px;
+        display: flex;
+        margin: auto;
+        margin-bottom: 40px;
+        flex-direction: column;
+        border-width: 10px;
+        outline: #7a7a7a solid 5px;
+    }
+
+    .reserveFormRow {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    #message {
+        width: 572px;
+        height: 220px;
+        resize: none;
+        font-size: 16px;
+    }
+
+    #urgency {
+        width: 400px;
+    }
+
+    .submitButton {
+        color: black;
+        font-family: "merriweather sans", sans-serif;
+        font-size: 32px;
+        padding: 5px 30px;
+        background-color: #ffab7a;
+        border-radius: 10px;
+        border: none;
+        margin: auto;
+        transition:
+            background-color 0.3s,
+            color 0.3s;
+    }
+
+    .submitButton:hover {
+        color: rgb(0, 0, 0);
+        font-family: "merriweather sans", sans-serif;
+        font-size: 32px;
+        padding: 5px 30px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .reserveFormRow div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .reserveForm input {
+        font-family: "Figtree", sans-serif;
+        font-size: 16px;
+        padding: 10px;
+        width: 572px;
+        border-radius: 8px;
+        border: 2px solid #ffffff;
+        background-color: #fffaf0;
+        outline: #7a7a7a solid 2px;
+    }
+
+    .reserveFormRow.dateGuestsRow input {
+        width: 268px;
+    }
+
+    .reserveForm textarea {
+        font-family: "Figtree", sans-serif;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 8px;
+        outline: #7a7a7a solid 2px;
+        outline: none;
+        background-color: #fffaf0;
+    }
+
+    .successMessage {
+        width: 586px;
+        height: 600px;
+        font-family: "figtree", sans-serif;
+        background-color: #1F202C;
+        border-radius: 20px;
+        padding: 30px;
+        gap: 15px;
+        display: flex;
+        font-size: 64px;
+        margin: auto;
+        margin-bottom: 40px;
+        align-items: center;
+        flex-direction: column;
+        border-width: 10px;
+        outline: #7a7a7a solid 5px;
+    }
+
+    .contactBox {
+        font-family: "figtree", sans-serif;
+        width: 400px;
+        height: 200px;
+        color: white;
+        padding: 15px;
+        background-color: #1F202C;
+        border-radius: 20px;
+        display: block;
+        border-width: 10px;
+        outline: #7a7a7a solid 5px;
+    }
+
+
+.faqMenu {
+    width: 400px;
+    font-family: "figtree", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.faqMenu h2 {
+  text-align: center;
+  margin-bottom: 0%;
+  font-size: 38px;
+  color: #1F202C;
+}
+
+.faqItem {
+    border-radius: 10px;
+    margin-top: 6px;
+    overflow: hidden;
+    outline: #7a7a7a solid 5px;
+}
+
+.faqTitle {
+    background-color: #1F202C;
+    font-family: "merriweather sans", sans-serif;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 28px;
+    text-align: left;
+    border: none;
+    width: 100%;
+}
+
+.faqContent {
+    background-color: #fef4e0;
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}

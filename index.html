@@ -16,7 +16,7 @@
             <img src="images/logo.png" height="50" alt="Logo">
             <div>
                 <a href="index.html" style="color: #FAB85B;">Home</a>
-			    <a href="order.html">Order Online</a>
+			    <a>Order Online</a>
 			    <a href="menu.html">Menu</a>
 			    <a href="aboutUs.html">About us</a>
                 <a href="reserve.html">Reserve</a>
@@ -25,8 +25,13 @@
 		</nav>
         <!--End of top bar-->
 
+        <!--Back to top Button-->
+        <div class="backToTop" onclick="scrollToTop()">
+            <img src="Assets/arrowUp.png" height="50" width="50">
+        </div>
+        
         <!--Hero Image and Button-->
-        <div class="hero">
+        <div class="hero" id="hero">
             <div>
                 <h1 class="heroText">A Taste of Heaven</h1>
                 <button class="heroBtn">Order Online</button>
@@ -41,18 +46,18 @@
             <div class="container">
                 <div class="homeMenu">
                     <h1>Menu</h1>
-                    <img src="Assets/menupic.jpg" height="300" width="400">
-                    <button class="gridButton"><b>View</b></button>
+                    <img src="Assets/menupic.jpg" height="300" width="400" alt="Burger Image">
+                    <a class="gridButton" href="menu.html"><b>View</b></a>
                 </div>
                 <div class="homeAbout">
                     <h1>About Us</h1>
-                    <img src="Assets/aboutpic.jpg" height="300" width="400">
-                    <button class="gridButton"><b>View</b></button>
+                    <img src="Assets/aboutpic.jpg" height="300" width="400" alt="Outside of restaurant image">
+                    <a class="gridButton" href="aboutUs.html"><b>View</b></a>
                 </div>
                 <div class="homeRes">
                     <h1>Book a Reservation</h1>
-                    <img src="Assets/reservepic.jpg" height="300" width="400">
-                    <button class="gridButton"><b>View</b></button>
+                    <img src="Assets/reservepic.jpg" height="300" width="400" alt="Image of table">
+                    <a class="gridButton" href="reserve.html"><b>View</b></a>
                 </div>
             </div>
         <!--End of Items CSS grid-->
@@ -60,7 +65,7 @@
         <!--Banner-->
             <div class="homeBanner">
                 <div>
-                    <img src="Assets/bannerimage.png" class="homeBannerImg">
+                    <img src="Assets/bannerimage.png" class="homeBannerImg" alt="Hamburger coming out of phone">
                 </div>
                 <div class="homeBannerText">
                     <h1>DOWNLOAD OUR MOBILE APP TO GET $5 OFF</h1>
@@ -80,7 +85,7 @@
 
         </footer>
 
-
+        <script src="script.js"></script>
 
     </body>
 </html>

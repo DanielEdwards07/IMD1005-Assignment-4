@@ -1,0 +1,135 @@
+<!--Reservation Page-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>Steakhouse Reservation Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="images/PageIcon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <!--Top Bar with all the options-->
+        <nav class="navbar">
+            <img src="images/logo.png" height="50" alt="Logo">
+            <div>
+                <a href="index.html">Home</a>
+			    <a href="order.html">Order Online</a>
+			    <a href="menu.html">Menu</a>
+			    <a href="aboutUs.html">About us</a>
+                <a href="reserve.html" style="color: #FAB85B;">Reserve</a>
+                <a href="career.html">Careers</a>
+            </div>
+		</nav>
+        <!--End of top bar-->
+
+        <!--Back to top Button-->
+        <div class="backToTop" onclick="scrollToTop()">
+            <img src="Assets/arrowUp.png" height="50" width="50">
+        </div>
+
+        <div class="reserveTitle"><h1>Reserve a Table</h1></div>
+
+        <div class="reserveContainer">
+            <div class="reserveLeft">
+                <!--Input Boxes-->
+                <form class="reserveForm" action="" method="post">
+
+                    <div class="reserveFormRow">
+                        <div>
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                    </div>
+
+                    <div class="reserveFormRow">
+                        <div>
+                            <label for="userEmail">Email:</label>
+                            <input type="email" id="userEmail" name="userEmail" placeholder="yourmail@domain.com" required>
+                        </div>
+                    </div>
+
+                    <div class="reserveFormRow">
+                        <div>
+                            <label for="userPhone">Phone Number:</label>
+                            <input type="number" id="userPhone" name="userPhone" placeholder="555-555-5555" required>
+                        </div>
+                    </div>
+
+                        <!-- Date & Guests row -->
+                    <div class="reserveFormRow dateGuestsRow">
+                        <div>
+                            <label for="userDate">Date of Event:</label>
+                            <input type="date" id="userDate" name="userDate" required>
+                        </div>
+
+                        <div>
+                            <label for="userGuests">Num. of Guests:</label>
+                            <input type="number" id="userGuests" name="userGuests" placeholder="2" required>
+                        </div>
+                    </div>
+
+                        <label for="message">Extra Info (optional):</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Enter info here" minlength="10" maxlength="500"></textarea>
+
+                        <button class="submitButton" type="submit">Submit</button>
+                </form>
+
+                <h2 id="successMessage" class="successMessage" style="color: rgb(255, 255, 255); display: none;">Thanks! We'll get back to you soon.</h2>
+
+            </div>
+
+            <div class="reserveRight">
+                <div class="contactBox">
+                    <h2>Contact Us</h2>
+                    <p><b>Phone:</b> 555-555-5555</p>
+                    <p><b>Email:</b> SteakPlace@mail.com</p>
+                    <p><b>Location:</b> 763 Merry St.</p>
+                    <p><b>Hours:</b> 11am - 10pm</p>
+                </div>
+
+                <div class="faqMenu">
+                    <h2 text-align="center">FAQ</h2>
+
+                    <div class="faqItem">
+                        <button class="faqTitle">Are walk-ins accepted?</button>
+                        <div class="faqContent">
+                            <p>We do accept walk-ins however it is recommended to make a reservation online as seating availability can be limited.</p>
+                        </div>
+                    </div>
+
+                    <div class="faqItem">
+                        <button class="faqTitle">How far in advance can I make a reservation?</button>
+                        <div class="faqContent">
+                            <p>Reservations can be made at a <b>maximum of 3 weeks</b> in advance which is recommended for large groups.</p>
+                        </div>
+                    </div>
+
+                    <div class="faqItem">
+                        <button class="faqTitle">What's the policy for large parties?</button>
+                        <div class="faqContent">
+                            <p>For parties of <b>8 or more</b> guests, you are required to make a reservation due to seating capacity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="footerBar">
+            <div>
+                <h1 class="footerText">Great food makes a great life</h1>
+                <h2 class="footerText">The world's best steakhouse</h2>
+            </div>
+            <h3 class="footerText">© 2026 All Rights Reserved</h3>
+
+        </footer>
+        <!-- End of Footer-->
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
+    </body>
