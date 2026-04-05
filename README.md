@@ -5,7 +5,7 @@ IMD1005 Final project Website
 
 ## Team Members
 - Jason Zhang - 101379014
-- Daniel [Last Name] - [Student Number]
+- Daniel Edwards - 101383660
 
 ---
 
@@ -125,7 +125,7 @@ Instead, form submissions are handled on the page using JavaScript for demonstra
 ## Links
 
 ### GitHub Repository
-[Add your team GitHub repository link here]
+(https://github.com/DanielEdwards07/IMD1005-Assignment-4)
 
 ### Live GitHub Pages Site
-[Add your live GitHub Pages link here]
+(https://danieledwards07.github.io/IMD1005-Assignment-4/)
