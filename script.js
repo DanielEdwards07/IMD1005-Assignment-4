@@ -2,14 +2,18 @@
 //Menu parallax
 const hero = document.getElementById("hero");
 
-document.addEventListener("mousemove", (e) => {
+if (window.innerWidth > 768) {
 
-    const x = (e.clientX / window.innerWidth - 0.5) * 20;
-    const y = (e.clientY / window.innerHeight - 0.5) * 20;
+    document.addEventListener("mousemove", (e) => {
 
-    hero.style.backgroundPosition = `calc(50% + ${x}px) calc(50% + ${y}px)`;
+        const x = (e.clientX / window.innerWidth - 0.5) * 20;
+        const y = (e.clientY / window.innerHeight - 0.5) * 20;
 
-});
+        hero.style.backgroundPosition = `calc(50% + ${x}px) calc(50% + ${y}px)`;
+
+    });
+
+}
 
 
 
@@ -114,7 +118,7 @@ if (reserveForm) {
     });
 };
 
-//Accordion Menu: Feature 5
+//Accordion Menu
 const acc = document.getElementsByClassName('faqTitle');
 
 for (let i = 0; i < acc.length; i++) {
@@ -150,3 +154,21 @@ window.addEventListener("scroll", () => {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+//Career application submitter
+const careerForm = document.getElementById('careerForm');
+const careerSuccessMessage = document.getElementById('careerSuccessMessage');
+
+if (careerForm) {
+    careerForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        careerForm.style.display = 'none';
+        careerSuccessMessage.style.display = 'flex';
+    });
+};
+
+//Hamburger menu
+function toggleMenu() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('open');
+}

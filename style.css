@@ -433,3 +433,570 @@
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
 }
+
+/* =========================
+   ABOUT US PAGE
+========================= */
+
+.aboutTitle,
+.careerTitle {
+    font-family: "Merriweather Sans", sans-serif;
+    text-align: center;
+    color: #1F202C;
+    font-size: 48px;
+    margin-top: 40px;
+}
+
+.aboutPage,
+.careerPage {
+    width: 85%;
+    margin: 0 auto 60px auto;
+    font-family: "Figtree", sans-serif;
+}
+
+.aboutHeroCard,
+.careerHeroCard,
+.aboutStorySection {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.aboutHeroText,
+.careerHeroText,
+.aboutStoryText,
+.aboutQuoteBox {
+    flex: 1;
+    min-width: 280px;
+    font-size: 18px;
+    background-color: #1F202C;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    outline: #7a7a7a solid 5px;
+    box-sizing: border-box;
+}
+
+.aboutHeroText h2,
+.aboutStoryText h2,
+.careerHeroText h2,
+.aboutQuoteBox h3,
+.careerWhySection h2,
+.careerTestimonialSection h2,
+.careerTipsBox h2,
+.careerForm h2 {
+    font-family: "Merriweather Sans", sans-serif;
+    margin-top: 0;
+}
+
+.aboutHeroImage,
+.careerHeroImage {
+    flex: 1;
+    min-width: 280px;
+    background-color: #1F202C;
+    padding: 20px;
+    border-radius: 20px;
+    outline: #7a7a7a solid 5px;
+    box-sizing: border-box;
+}
+
+.aboutHeroImage img,
+.careerHeroImage img {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+.aboutInfoGrid,
+.careerBenefitsGrid,
+.careerTestimonialsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.aboutInfoCard,
+.careerBenefitCard,
+.careerTestimonialCard,
+.careerTipsBox {
+    background-color: #1F202C;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    outline: #7a7a7a solid 5px;
+    box-sizing: border-box;
+}
+
+.aboutInfoCard img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.aboutInfoCard h3,
+.careerBenefitCard h3,
+.careerTestimonialCard h3 {
+    font-family: "Merriweather Sans", sans-serif;
+    margin-top: 0;
+}
+
+.aboutQuoteBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutQuoteBox h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   CAREERS PAGE
+========================= */
+
+.careerWhySection,
+.careerTestimonialSection {
+    margin-bottom: 35px;
+}
+
+.careerApplySection {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.careerApplyLeft,
+.careerApplyRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.careerForm {
+    width: 586px;
+    font-family: "Figtree", sans-serif;
+    color: white;
+    background-color: #1F202C;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 15px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 40px;
+    flex-direction: column;
+    outline: #7a7a7a solid 5px;
+    box-sizing: border-box;
+}
+
+.careerFormRow {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.careerFormRow div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.careerForm input,
+.careerForm select {
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    background-color: #fffaf0;
+    box-sizing: border-box;
+}
+
+.careerForm textarea {
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fffaf0;
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.careerSuccessMessage {
+    width: 586px;
+    min-height: 300px;
+    font-family: "Figtree", sans-serif;
+    background-color: #1F202C;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    font-size: 42px;
+    margin: auto;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    outline: #7a7a7a solid 5px;
+    box-sizing: border-box;
+}
+
+.careerTipsBox {
+    width: 400px;
+    margin-top: 30px;
+}
+
+.careerTipsBox ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.careerTipsBox li {
+    margin-bottom: 10px;
+}
+
+.careerApplyBtn {
+    color: black;
+    font-family: "Figtree", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 28px;
+    background-color: #ffab7a;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.careerApplyBtn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+    .aboutInfoGrid,
+    .careerBenefitsGrid,
+    .careerTestimonialsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .aboutHeroCard,
+    .careerHeroCard,
+    .aboutStorySection,
+    .careerApplySection {
+        flex-direction: column;
+    }
+
+    .aboutPage,
+    .careerPage {
+        width: 92%;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .navbar div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar a {
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+
+    .aboutTitle,
+    .careerTitle {
+        font-size: 36px;
+    }
+
+    .aboutHeroText,
+    .careerHeroText,
+    .aboutStoryText,
+    .aboutQuoteBox,
+    .aboutHeroImage,
+    .careerHeroImage,
+    .aboutInfoCard,
+    .careerBenefitCard,
+    .careerTestimonialCard,
+    .careerTipsBox,
+    .careerForm,
+    .careerSuccessMessage {
+        padding: 18px;
+    }
+
+    .careerForm,
+    .careerSuccessMessage,
+    .careerTipsBox,
+    .contactBox {
+        width: 100%;
+    }
+
+    .backToTop {
+        width: 55px;
+        height: 55px;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+
+
+/*MOBILE-----------------*/
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #11283fad;
+    border-radius: 10px;
+    padding: 6px;
+    z-index: 100;
+}
+
+.hamburger div {
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+
+    .hamburger {
+      display: flex;
+    }
+
+    .navbar {
+        position: fixed;
+        inset: 0 0 0 55%;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: transform 0.2s ease-in-out;
+        transform: translateX(100%);
+    }
+
+    .navbar.open {
+        display: flex;
+        transform: translateX(0%);
+    }
+
+    .navbar img {
+        display: none;
+    }
+
+    .navbar div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+        width: 10px;
+    }
+
+    .navbar a {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 24px;
+        padding-left: 0;
+        padding-right: 10px;
+    }
+
+
+/*HERO SECTION*/
+.hero {
+    height: 70vh;
+    background-size: cover;
+}
+
+.heroText {
+    font-size: 64px;
+    margin-top: 30%;
+}
+
+.heroBtn {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+
+/* GRID CONTAINER */
+.container {
+        margin: 20px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "homeMenu"
+            "homeAbout"
+            "homeRes";
+        gap: 20px;
+        width: auto;
+    }
+
+
+    
+.container div h1 {
+    font-size: 24px;
+    padding: 10px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* GRID BUTTON */
+.gridButton {
+    font-size: 18px;
+    padding: 8px 18px;
+}
+
+
+/* HOME BANNER */
+.homeBanner {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.homeBannerImg {
+    display: none;
+}
+
+.homeBannerText {
+    font-size: 16px;
+}
+
+
+/* FOOTER */
+.footerBar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.footerText {
+    font-size: 12px;
+}
+
+/*MENU PAGE*/
+
+.menuTitle {
+    font-size: 36px;
+}
+
+/*ABOUT US PAGE*/
+.aboutHeroImage{
+    display: none;
+}
+
+/*RESERVATION PAGE*/
+
+.reserveTitle {
+    font-size: 36px;
+}
+
+.reserveForm {
+    width: 100%;
+    max-width: 586px;
+    min-height: 600px;
+    box-sizing: border-box;
+}
+
+.reserveForm input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#message {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.reserveContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.reserveLeft,
+.reserveRight {
+    width: 100%;
+}
+
+.reserveFormRow {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.reserveFormRow.dateGuestsRow {
+    flex-direction: column;
+}
+
+.reserveFormRow.dateGuestsRow input {
+    width: 100%;
+}
+
+.contactBox {
+    width: 90%;
+}
+
+
+.faqMenu {
+    width: 90%;
+}
+
+.successMessage {
+    width: 80%;
+    font-size: 40px;
+}
+
+/*CAREERS PAGE*/
+.careerHeroImage {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+}

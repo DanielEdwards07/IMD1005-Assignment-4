@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Steakhouse Careers Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/PageIcon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!--Hamburger Menu-->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    <!--Top Bar with all the options-->
+    <nav class="navbar">
+        <img src="Assets/logo.png" height="80" alt="Logo">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="order.html">Order Online</a>
+            <a href="menu.html">Menu</a>
+            <a href="aboutUs.html">About us</a>
+            <a href="reserve.html">Reserve</a>
+            <a href="career.html" style="color: #FAB85B;">Careers</a>
+        </div>
+    </nav>
+    <!--End of top bar-->
+
+    <!--Back to top Button-->
+    <div class="backToTop" onclick="scrollToTop()">
+        <img src="Assets/arrowUp.png" height="50" width="50" alt="Back to top arrow">
+    </div>
+
+    <div class="careerTitle">
+        <h1>Careers</h1>
+    </div>
+
+    <main class="careerPage">
+
+        <section class="careerHeroCard">
+            <div class="careerHeroImage">
+                <img src="Assets/aboutpic.jpg" alt="Restaurant team environment">
+            </div>
+
+            <div class="careerHeroText">
+                <h2>Come Work With Us</h2>
+                <p>
+                    We are always looking for motivated, friendly, and hardworking people who want to be part
+                    of a professional restaurant team. Whether you are experienced in hospitality or just getting started,
+                    we value attitude, reliability, and a strong work ethic.
+                </p>
+                <p>
+                    Join a team that takes pride in quality food, strong service, and creating a great experience
+                    for every guest who walks through our doors.
+                </p>
+            </div>
+        </section>
+
+        <section class="careerWhySection">
+            <h2>Why Join Our Team</h2>
+
+            <div class="careerBenefitsGrid">
+                <article class="careerBenefitCard">
+                    <h3>Supportive Team</h3>
+                    <p>
+                        Work in an environment where teamwork, communication, and respect matter every day.
+                    </p>
+                </article>
+
+                <article class="careerBenefitCard">
+                    <h3>Real Experience</h3>
+                    <p>
+                        Build valuable customer service and hospitality skills in a fast-paced professional setting.
+                    </p>
+                </article>
+
+                <article class="careerBenefitCard">
+                    <h3>Growth Opportunities</h3>
+                    <p>
+                        Strong performance can lead to more responsibility and long-term opportunities within the team.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="careerApplySection">
+            <div class="careerApplyLeft">
+                <form class="careerForm" id="careerForm" action="" method="post">
+                    <h2>Apply Now</h2>
+
+                    <div class="careerFormRow">
+                        <div>
+                            <label for="careerName">Full Name:</label>
+                            <input type="text" id="careerName" name="careerName" placeholder="John Doe" required>
+                        </div>
+                    </div>
+
+                    <div class="careerFormRow">
+                        <div>
+                            <label for="careerEmail">Email:</label>
+                            <input type="email" id="careerEmail" name="careerEmail" placeholder="yourmail@domain.com" required>
+                        </div>
+                    </div>
+
+                    <div class="careerFormRow">
+                        <div>
+                            <label for="careerPhone">Phone Number:</label>
+                            <input type="tel" id="careerPhone" name="careerPhone" placeholder="555-555-5555" required>
+                        </div>
+                    </div>
+
+                    <div class="careerFormRow">
+                        <div>
+                            <label for="careerPosition">Position:</label>
+                            <select id="careerPosition" name="careerPosition" required>
+                                <option value="">Select a position</option>
+                                <option value="Server">Server</option>
+                                <option value="Host">Host</option>
+                                <option value="Line Cook">Line Cook</option>
+                                <option value="Prep Cook">Prep Cook</option>
+                                <option value="Dishwasher">Dishwasher</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="careerFormRow">
+                        <div>
+                            <label for="careerResume">Resume:</label>
+                            <input type="file" id="careerResume" name="careerResume" accept=".pdf,.doc,.docx" required>
+                        </div>
+                    </div>
+
+                    <label for="careerMessage">Why would you be a good fit? (optional):</label>
+                    <textarea id="careerMessage" name="careerMessage" rows="5" placeholder="Tell us a little about yourself"></textarea>
+
+                    <button class="submitButton" type="submit">Submit Application</button>
+                </form>
+
+                <h2 id="careerSuccessMessage" class="careerSuccessMessage" style="color: rgb(255, 255, 255); display: none;">
+                    Thanks for applying! We will get in touch with you soon.
+                </h2>
+            </div>
+
+            <div class="careerApplyRight">
+                <div class="contactBox">
+                    <h2>Hiring Info</h2>
+                    <p><b>Email:</b> careers@steakplace.com</p>
+                    <p><b>Phone:</b> 555-555-5555</p>
+                    <p><b>Location:</b> 763 Merry St.</p>
+                    <p><b>Open Roles:</b> Front of House & Kitchen</p>
+                </div>
+
+                <div class="careerTipsBox">
+                    <h2>What We Look For</h2>
+                    <ul>
+                        <li>Strong communication skills</li>
+                        <li>Positive attitude</li>
+                        <li>Reliable attendance</li>
+                        <li>Ability to work in a team</li>
+                        <li>Professional customer service</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="careerTestimonialSection">
+            <h2>Team Testimonials</h2>
+
+            <div class="careerTestimonialsGrid">
+                <article class="careerTestimonialCard">
+                    <p>
+                        “The team atmosphere is one of the best parts of working here. Everyone supports each other
+                        and the environment stays positive even during busy shifts.”
+                    </p>
+                    <h3>Jordan, Server</h3>
+                </article>
+
+                <article class="careerTestimonialCard">
+                    <p>
+                        “I learned a lot about communication, organization, and customer service. It is a great place
+                        to grow your confidence and experience.”
+                    </p>
+                    <h3>Taylor, Host</h3>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer class="footerBar">
+        <div>
+            <h1 class="footerText">Great food makes a great life</h1>
+            <h2 class="footerText">The world's best steakhouse</h2>
+        </div>
+        <h3 class="footerText">© 2026 All Rights Reserved</h3>
+    </footer>
+    <!-- End of Footer-->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
