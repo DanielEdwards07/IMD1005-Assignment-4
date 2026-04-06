@@ -70,7 +70,7 @@ The website includes 5 pages:
 - Helped connect the pages together into one full website
 
 ### Donya Biniek
-- Conducted Quality Assurance (QA) Testing: Tested the live site on multiple browsers and devices to ensure responsiveness.
+- Conducted Quality Assurance (QA) Testing: Tested the live site on multiple browsers and devices to ensure functionality and responsiveness.
 
 
 ## Design Document Summary
