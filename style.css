@@ -892,6 +892,10 @@
     padding: 20px;
 }
 
+.logoPic {
+    display: none;
+}
+
 .homeBannerImg {
     display: none;
 }
