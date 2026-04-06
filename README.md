@@ -69,7 +69,9 @@ The website includes 5 pages:
 - Built the shared navigation bar, footer, and general site structure
 - Helped connect the pages together into one full website
 
----
+### Donya Biniek
+-Conducted Quality Assurance (QA) Testing: Tested the live site on multiple browsers and mobile devices to ensure responsiveness.
+
 
 ## Design Document Summary
 Our design direction was to create a steakhouse website that feels:
