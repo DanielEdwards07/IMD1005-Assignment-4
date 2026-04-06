@@ -6,7 +6,7 @@ IMD1005 Final project Website
 ## Team Members
 - Jason Zhang - 101379014
 - Daniel Edwards - 101383660
-- Donya - ID#
+- Donya Biniek - 041020886
 
 ---
 
