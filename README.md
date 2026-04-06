@@ -72,7 +72,7 @@ The website includes 5 pages:
 ### Donya Biniek
 - Conducted Quality Assurance (QA) Testing: Tested the live site on multiple browsers and devices to ensure functionality and responsiveness.
 - Helped write out the design document for the website.
-
+- Helped with the design aspects of the website.                                       
 ## Design Document Summary
 Our design direction was to create a steakhouse website that feels:
 - warm
