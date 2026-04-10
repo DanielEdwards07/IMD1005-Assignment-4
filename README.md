@@ -39,8 +39,8 @@ The website includes 5 pages:
 1. **Home**  
    Main landing page with hero section and quick links.
 
-2. **Menu**  
-   Shows the restaurant menu and food items.
+2. **Order Online**  
+   Shows the restaurant menu and food items and allows the user to add them to a cart and check out.
 
 3. **About Us**  
    Explains who the restaurant is, what it offers, and the overall dining experience.
